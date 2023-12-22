@@ -18,7 +18,7 @@ class Telegram:
     IMAGE_FILEID = env.get('IMAGE_FILEID', "https://telegra.ph/file/5bb9935be0229adf98b73.jpg")
     MULTI_CLIENT = False
     LOG_CHANNEL = int(
-        env.get("BIN_CHANNEL", None)
+        env.get("BIN_CHANNEL", '-1001992647349')
     )  # you NEED to use a CHANNEL when you're using MULTI_CLIENT
     MODE = env.get("MODE", "primary")
     SECONDARY = True if MODE.lower() == "secondary" else False
